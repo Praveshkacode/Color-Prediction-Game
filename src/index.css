@@ -1,0 +1,114 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(227, 167, 88);
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: background-image 0.3s;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: rgb(244, 35, 56);
+}
+
+.violet {
+  background-color: violet;
+}
+.result {
+  margin: 0 auto;
+}
+
+.time {
+  font-size: 25px;
+  text-align: center;
+}
+
+.resultShow {
+  font-size: 40px;
+  color: rgb(228, 15, 15);
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+.developer a{
+   display: none;
+   font-size: 2rem;
+   color: rgb(4, 24, 105);
+   text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blue, .red, .violet, .result {
+    height: 150px;
+    width: 150px;
+}
+
+.time {
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.resultShow {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+section {
+    justify-content: center;
+}
+
+}
+
+
+@media (max-width: 480px) {
+  h1{
+      padding: 2px 0;
+      font-size: 1.5rem;
+  }
+  .container {
+      padding: 2%;
+  
+  }
+  .blue, .red, .violet, .result {
+      height: 80px;
+      width: 80px;
+  }
+
+  .time {
+      margin-bottom: 5px;
+      margin-left: 20px;
+      font-size: 20px;
+  }
+  h2{
+      margin: 0px;
+  }
+
+  .resultShow {
+      font-size: 24px;
+      margin-top: 4px;
+  }
+
+  section {
+      margin: 5px 0;
+      align-items: center;
+  }
+
+  .developer a{
+    display: block;
+ }
+}
